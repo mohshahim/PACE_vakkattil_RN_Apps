@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
-import { MaterialIcons, FontAwesome5 } from '@expo/vector-icons';
+import { MaterialIcons, FontAwesome5 , Entypo} from '@expo/vector-icons';
 
 export default function App() {
   return (
@@ -31,6 +31,12 @@ export default function App() {
           <MaterialIcons name="email" size={24} color="black" />
           <Text style={styles.infoText}>email : shaashahim@gmail.com</Text>
         </View>
+
+          {/* Phone Number */}
+          <View style={styles.infoRow}>
+            <Entypo name="phone" size={24} color="black" />
+            <Text style={styles.infoText}>Phone: +1 234 567 890</Text>
+          </View>
 
         {/* Interests */}
         <View style={styles.infoRow}>
